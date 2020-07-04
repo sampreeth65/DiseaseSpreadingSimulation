@@ -62,18 +62,18 @@ HPb = HPa - (2.0 * L) if 50 <= Hpa
 # Project was Divided into 3 tasks:
 
 # Task 1:
-	Getting a list of people from connection.txt file.
-	Building people connection with the list of people provided.
+Getting a list of people from connection.txt file.
+Building people connection with the list of people provided.
 
 # Task 2:
-	Each person in task one is considered as patient
-	Initial health points of patient zero is provided by used.
-	Check if a person will meet his/her connection, If he meets check if the person is contagious. If he/she is contagious, infect the other person he/she meets
-	Simulation should run for number of days provided by the user.
-	Each day patient is put to sleep after he has met all his connections.
-	Output shows number of people contagious at the end of each day.
+Each person in task one is considered as patient
+Initial health points of patient zero is provided by used.
+Check if a person will meet his/her connection, If he meets check if the person is contagious. If he/she is contagious, infect the other person he/she meets
+Simulation should run for number of days provided by the user.
+Each day patient is put to sleep after he has met all his connections.
+Output shows number of people contagious at the end of each day.
 
 # Task 3:
-	Data produced from task 2 is used to produce a visual curve that shows number of people contagious at the end of each day.
+Data produced from task 2 is used to produce a visual curve that shows number of people contagious at the end of each day.
 
 	
