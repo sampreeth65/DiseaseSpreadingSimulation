@@ -112,7 +112,7 @@ def run_simulation(days, meeting_probability, patient_zero_health):
         of each person and also create their connections."""
 def load_patients(initial_health):
 
-    file = open("a2_sample_set.txt", "r")
+    file = open("connection.txt", "r")
     split_lines = file.read().splitlines()
     file.close()
 

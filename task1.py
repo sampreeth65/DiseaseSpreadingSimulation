@@ -39,7 +39,7 @@ class Person:
         of each person and also create their connections."""
 def load_people():
 
-    file = open("a2_sample_set.txt", "r")
+    file = open("connection.txt", "r")
     split_lines = file.read().splitlines()
     file.close()
 
