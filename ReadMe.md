@@ -1,15 +1,15 @@
-#Disease Spreading Simulation
+# Disease Spreading Simulation
 
-#Background:
+# Background:
 In the past, there have been viral disease epidemics which have got out of hand.This project works on simulating the way such diseases spread.
 
-#Source Data
+# Source Data
 A survey of 200 fake people, all with unique names and also their friends who are in regular contact with them are noted down in a connections.txt file.
 Example Interpretaion of source data:
 if a person with name Gill Bates has a connection with Jode Killam,Natacha,.....
 it is made sure Jode Killam also has Gill Bates in his connection
 
-#How the virus spreads
+# How the virus spreads
 Each person is assigned a health point which changes over time dependingona person's health.
 
 Division of health Points:
@@ -31,7 +31,7 @@ if random number generated is 1.0, that person will meet each of his/her connect
 if random number generated is 0.0, that person will not meet any of his connection.
 if random number generated is 0.33, that person will have a 33.33% chance of meeting his connection.
 
-#Viral load:
+# Viral load:
 The virus spreads when a contagious person passes a viral load to a person they are visiting, or a person who has visited them.
 
 Viral load produced by a contagious person is given by the following formula 
@@ -46,7 +46,7 @@ Note:
 A person can be effected by a viral load even if they are already partly sick.
 
 
-#Effect of Infection:
+# Effect of Infection:
 When a contagious person produces a viral load,every person they meet when visting (or being visited) will be infected by their viral load. If the viral load is small, a person is healthy, the person who is infected might not become sick, and they will qickly recover their health later when they sleep.
 
 The change in health from receiving a viral load from another person is given by the fillowing formula
@@ -59,13 +59,13 @@ HPb = HPa - (0.1 * L) if Hpa <= 29
 HPb = HPa - (1.0 * L) if 29 < HPa < 50
 HPb = HPa - (2.0 * L) if 50 <= Hpa
 
-Project was Divided into 3 tasks:
+# Project was Divided into 3 tasks:
 
-Task 1:
+# Task 1:
 	Getting a list of people from connection.txt file.
 	Building people connection with the list of people provided.
 
-Task 2:
+# Task 2:
 	Each person in task one is considered as patient
 	Initial health points of patient zero is provided by used.
 	Check if a person will meet his/her connection, If he meets check if the person is contagious. If he/she is contagious, infect the other person he/she meets
@@ -73,7 +73,7 @@ Task 2:
 	Each day patient is put to sleep after he has met all his connections.
 	Output shows number of people contagious at the end of each day.
 
-Task 3:
+# Task 3:
 	Data produced from task 2 is used to produce a visual curve that shows number of people contagious at the end of each day.
 
 	
